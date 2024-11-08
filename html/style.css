@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Estils generals */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Barra de navegación */
+/* Capçalera */
 header {
     background-color: #333;
     padding: 10px 20px;
@@ -42,40 +42,63 @@ header {
     font-size: 1.5em;
 }
 
-/* Contenido principal */
+/* Contingut principal */
 main {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
     padding: 20px;
 }
 
-.image-container {
-    display: flex;
-    gap: 20px;
-}
-
-.image-box {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border: 2px solid #333;
+/* Secció */
+section {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+section h1 {
+    margin-bottom: 10px;
 }
 
-.image-box:hover {
-    transform: scale(1.05);
+/* Article */
+article {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Pie de página */
+/* Aside */
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Peu de pàgina */
 footer {
     background-color: #333;
     color: #f5f5f5;
@@ -83,11 +106,34 @@ footer {
     padding: 15px 0;
 }
 
-footer a {
+footer .social-links a {
     color: #f5f5f5;
     text-decoration: none;
 }
 
-footer a:hover {
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+.imgEnlace {
+    width: 200px;
+    height: 200px;
+}
+
+.imgProyect {
+    width: 250px;
+    height: 250px;
+}
+
+section ul {
+    list-style: none;
+}
+
+section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+section ul li a:hover {
     text-decoration: underline;
 }

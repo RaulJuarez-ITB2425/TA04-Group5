@@ -3,37 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Página web de muestra con HTML y CSS, estructura completa con capçalera, contingut principal i peu de pàgina.">
+    <meta name="keywords" content="HTML, CSS, página web, diseño web">
+    <meta name="author" content="El teu nom">
+    <title>Página de Muestra</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Barra de navegación -->
+    <!-- Capçalera -->
     <header>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">Página Principal</a></li>
-                <li><a href="proyectos.html">Listado de Proyectos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="index.html" class="logo">🌐</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contenido principal -->
+    <!-- Contingut principal -->
     <main>
-        <div class="image-container">
-            <a href="pagina1.html" class="image-box">
-                <img src="imagen1.jpg" alt="Imagen 1">
-            </a>
-            <a href="pagina2.html" class="image-box">
-                <img src="imagenes/patata.jpg" alt="Imagen 2">
-            </a>
-        </div>
+        <!-- Secció principal -->
+        <section>
+            <h1>Bienvenido a Nuestra Página</h1>
+            <p>Aquí encontrarás información sobre nuestros proyectos y servicios.</p>
+            <ul>
+                <li><a href="proyecto1.html">Proyecto 1 <img class="imgProyect" src="imagenes/patata.jpg"></a></li>
+                <li><a href="proyecto2.html">Proyecto 2</a><img class="imgProyect" src="imagenes/patata.jpg"></li>
+                <li><a href="proyecto3.html">Proyecto 3</a><img class="imgProyect" src="imagenes/patata.jpg"></li>
+                <li><a href="proyecto4.html">Proyecto 4</a><img class="imgProyect" src="imagenes/patata.jpg"></li>
+            </ul>
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h3>Enlace Rápido</h3>
+            <ul>
+                <li><a href="proyectos.html">Ver Todos los Proyectos<img class="imgEnlace" src="imagenes/patata.jpg" alt="imagen 1"></a></li>
+                <li><a href="contacto.html">Contáctanos<img class="imgEnlace" src="imagenes/patata.jpg" alt="imagen 1"></a></li>
+            </ul>
+        </aside>
     </main>
 
-    <!-- Pie de página -->
+    <!-- Peu de pàgina -->
     <footer>
-        <p>&copy; 2023 Mi Sitio Web | <a href="formulario.html">Formulario de Contacto</a></p>
+        <p>&copy; 2023 Mi Sitio Web</p>
+        <div class="social-links">
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://instagram.com">Instagram</a>
+        </div>
     </footer>
 
 </body>
