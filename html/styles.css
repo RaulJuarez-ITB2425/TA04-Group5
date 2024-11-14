@@ -22,7 +22,7 @@ header {
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
@@ -38,10 +38,6 @@ header {
     border-radius: 5px;
 }
 
-.logo {
-    font-size: 1.5em;
-}
-
 /* Contenido principal */
 main {
     flex: 1;
@@ -54,6 +50,8 @@ main {
 /* Enlace Rápido */
 .enlace-rapido {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-around;
     background-color: #f1f1f1;
     padding: 20px;
@@ -61,19 +59,13 @@ main {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.enlace-rapido .image-box {
-    text-align: center;
-    max-width: 150px; /* Tamaño máximo de la caja de imagen */
-}
-
-.enlace-rapido img {
-    width: 100%;
-    border-radius: 5px;
-}
-
 .enlace-rapido p {
     margin-top: 5px;
-    font-size: 0.9em;
+    font-size: 1.1em;
+}
+.enlace-rapido h3 {
+    margin-top: 5px;
+    font-size: 1.7em;
 }
 
 /* Sección Principal */
