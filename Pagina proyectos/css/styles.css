@@ -53,30 +53,51 @@ main {
 }
 
 /* Enlace Rápido */
-.enlace-rapido {
+#enlace-rapido {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: #f1f1f1;
-    padding: 20px;
+    text-align: center;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url("/imagenes/hacking2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
 }
 
-.enlace-rapido p {
-    margin-top: 5px;
-    font-size: 1.1em;
-    max-width: 100%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+#enlace-rapido h3 {
+    font-size: 2.3em;
 }
-.enlace-rapido h3 {
-    margin-top: 5px;
-    font-size: 1.7em;
+
+#enlace-rapido button {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 28px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+#enlace-rapido button:hover {
+    background-color: rgb(77, 18, 133);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#enlace-rapido p {
+    font-size: 1.1em;
+    max-width: 750px;
+    padding: 90px 20px;
 }
 
 /* Sección Principal */
@@ -122,6 +143,79 @@ main {
     border-radius: 5px;
     font-size: 0.9em;
     font-weight: bold;
+}
+/* Formulario */
+#contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #333;
+}
+
+#contacto p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content label {
+    font-size: 15px;
+    color: #333;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"] {
+    height: 40px;
+    max-width: 100%;
+    margin-bottom: 15px
+}
+
+#contacto button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contacto button:hover {
+    background-color: rgb(77, 18, 133);
 }
 
 /* Peu de pàgina */
@@ -198,3 +292,53 @@ section span {
     margin-bottom: 60px;
 }
 
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.project-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.project-image {
+    flex: 1;
+    max-width: 120px;
+}
+.project-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+.project-info {
+    flex: 3;
+    padding-left: 20px;
+}
+.project-info h1 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+.project-info p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #555;
+}
+.project-info a {
+    text-decoration: none;
+    color: #007bff;
+}
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}

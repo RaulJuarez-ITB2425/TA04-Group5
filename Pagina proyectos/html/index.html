@@ -16,19 +16,18 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="activo">Inicio</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <aside class="enlace-rapido">
-        <div>
+        <aside id="enlace-rapido">
             <h3>Sobre nosotros</h3>
-        </div>
-            <div class="us">
-                <p>Somos un grupo de personas interesadas en el mundo de la tecnologia</p>                
-            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quod ab. Aliquam sint aperiam corrupti quia error inventore, architecto molestias quod tenetur, nihil voluptatem itaque nam assumenda enim repellat. Deserunt?</p>
+                <form action="#contacto">
+                    <button>Más información</button>
+                </form>                
         </aside>
 
         <section class="pagina-principal">
@@ -54,6 +53,25 @@
                     <span class="project-title">Desalinización de Agua con Energía Solar</span>
                 </a>
             </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes cualquier consulta, no dudes en enviarnos un mensaje.</p>
+            <form action="procesar_formulario.php" method="POST">
+                <div class="content">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="70" required>
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" maxlength="70" required>
+                
+        
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="9" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
