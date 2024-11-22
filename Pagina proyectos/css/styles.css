@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     color: #333;
     background-color: #f5f5f5;
+
 }
 
 /* Capçalera */
@@ -66,7 +67,7 @@ main {
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
     )
-    ,url("/imagenes/hacking2.jpg");
+    ,url("../imagenes/hacking2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -107,15 +108,27 @@ main {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 1500px;
+    max-width: 1202px;
     margin: 0 auto;
 }
 
 .pagina-principal h1 {
-    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+
 }
 
-.image-container {
+.pagina-principal p {
+    padding-bottom: 30px;
+}
+
+.image-container1 {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+.image-container2 {
     display: flex;
     gap: 20px;
 }
@@ -126,11 +139,14 @@ main {
     overflow: hidden;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    border: 1px solid rgb(50,50,50);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .image-box img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-title {
@@ -144,6 +160,7 @@ main {
     font-size: 0.9em;
     font-weight: bold;
 }
+
 /* Formulario */
 #contacto {
     background-color: #f9f9f9;
@@ -300,6 +317,7 @@ section span {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .project-item {
     display: flex;
     flex-direction: row;
