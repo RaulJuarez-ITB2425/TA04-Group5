@@ -1,0 +1,25 @@
+// Espera 5 segundos para mostrar el botón
+setTimeout(() => {
+    // Crear el botón dinámicamente
+    const button = document.createElement('button');
+    button.id = 'animated-button';
+    button.textContent = '¿Quieres un iPhone gratis? ¡Pulsa aquí!';
+    document.getElementById('container').appendChild(button);
+  
+    // Agregar evento de clic al botón
+    button.addEventListener('click', () => {
+      // Mostrar el jumpscare
+      const jumpscare = document.getElementById('jumpscare');
+      jumpscare.classList.add('show');
+      
+      // Reproducir el sonido
+      const audio = document.getElementById('jumpscare-audio');
+      audio.play();
+  
+      // Ocultar el jumpscare después de unos segundos
+      setTimeout(() => {
+        jumpscare.classList.remove('show');
+      }, 3000);
+    });
+  }, 3000);
+  
