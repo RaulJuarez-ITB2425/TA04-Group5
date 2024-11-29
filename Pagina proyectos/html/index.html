@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-
+    
     <header>
         <nav>
             <ul class="nav-menu">
@@ -20,7 +20,6 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <aside id="enlace-rapido">
             <h3>Sobre nosotros</h3>
@@ -55,7 +54,7 @@
             </div>
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+           <h2>Contacto</h2>
             <p>Si tienes cualquier consulta, no dudes en enviarnos un mensaje.</p>
             <form action="procesar_formulario.php" method="POST">
                 <div class="content">
@@ -69,9 +68,12 @@
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="9" required></textarea>
                 </div>
-                
-                <button type="submit">Enviar</button>
+                 <button type="submit" id="submit-button">Enviar</button>
             </form>
+        <div id="success-message" class="hidden">
+        </div>
+    </section>
+    <script src="../js/script.js"></script>
         </section>
     </main>
 
