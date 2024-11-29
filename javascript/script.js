@@ -20,6 +20,8 @@ setTimeout(() => {
       setTimeout(() => {
         jumpscare.classList.remove('show');
       }, 3000);
+      // Eliminar el botón del DOM
+      button.remove();
     });
   }, 3000);
   
