@@ -19,6 +19,6 @@ document.getElementById('submit-button').addEventListener('click', (e) => {
             button.style.backgroundColor = '';
             button.disabled = false;
         }, 5000);
-    }, 2000);
+    }, 1000);
 });
 
