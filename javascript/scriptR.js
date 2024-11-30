@@ -1,9 +1,12 @@
-// Espera 5 segundos para mostrar el botón
+// Espera 3 segundos para mostrar el botón
 setTimeout(() => {
     // Crear el botón dinámicamente
     const button = document.createElement('button');
     button.id = 'animated-button';
-    button.textContent = '¿Quieres un iPhone gratis? ¡Pulsa aquí!';
+    button.textContent = '¿Quieres un iPhone gratis?';
+    const lineBreak = document.createElement('br');
+    button.appendChild(lineBreak);
+    button.appendChild(document.createTextNode('¡Pulsa aquí!'));    
     document.getElementById('container').appendChild(button);
   
     // Agregar evento de clic al botón
