@@ -355,7 +355,7 @@ footer .social-links a:hover {
     text-decoration: underline;
 }
 
-#bodyProyectos {
+.bodyProyectos {
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.7),
@@ -440,3 +440,22 @@ html {
   .hidden {
     display: none;
   }
+
+  /* script paginación */
+
+  .paginacion .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+ .paginacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+ }
+
+ .paginacion a {
+    color: white;
+ }
